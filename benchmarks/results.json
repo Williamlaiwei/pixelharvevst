@@ -1,0 +1,34 @@
+{
+  "dataset": {
+    "generator": "seeded uniform RGB, JPEG quality 90; no padding",
+    "images": 8,
+    "rejected_geometry": "6 x 4096x512",
+    "accepted_geometry": "2 x 1600x1200",
+    "minimum_width": 1024,
+    "minimum_height": 1024
+  },
+  "environment": {
+    "python": "3.12.2",
+    "os": "Windows",
+    "machine": "AMD64",
+    "httpx": "0.28.1",
+    "Pillow": "13.0.0"
+  },
+  "measurements": {
+    "full_download": {
+      "body_bytes_consumed": 14725353,
+      "rejected_images": 6,
+      "elapsed_seconds": 0.480957,
+      "server_write_bytes_observed": 14725353
+    },
+    "streaming_early_rejection": {
+      "body_bytes_consumed": 3491723,
+      "rejected_images": 6,
+      "elapsed_seconds": 0.30001,
+      "server_write_bytes_observed": 4679563
+    }
+  },
+  "bytes_saved": 11233630,
+  "body_bytes_saved_percent": 76.288,
+  "methodology": "One sequential round per method against a loopback HTTP server. Both check actual dimensions; accepted files verify and decode. FFT/pHash/QC are excluded from both timings. Application body bytes are measured; server/kernel read-ahead and protocol overhead are not wire-byte savings. Geometry intentionally favors rejection; not a representative website workload."
+}

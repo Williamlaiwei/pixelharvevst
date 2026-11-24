@@ -1,0 +1,200 @@
+[
+  {
+    "License": "MIT",
+    "Name": "anyio",
+    "URL": "https://anyio.readthedocs.io/en/stable/versionhistory.html",
+    "Version": "4.16.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "beautifulsoup4",
+    "URL": "https://www.crummy.com/software/BeautifulSoup/bs4/",
+    "Version": "4.15.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "build",
+    "URL": "https://build.pypa.io",
+    "Version": "1.6.1"
+  },
+  {
+    "License": "Mozilla Public License 2.0 (MPL 2.0)",
+    "Name": "certifi",
+    "URL": "https://github.com/certifi/python-certifi",
+    "Version": "2026.11.20"
+  },
+  {
+    "License": "BSD License",
+    "Name": "colorama",
+    "URL": "https://github.com/tartley/colorama",
+    "Version": "0.4.6"
+  },
+  {
+    "License": "MIT AND PSF-2.0",
+    "Name": "greenlet",
+    "URL": "https://greenlet.readthedocs.io",
+    "Version": "3.5.6"
+  },
+  {
+    "License": "MIT License",
+    "Name": "h11",
+    "URL": "https://github.com/python-hyper/h11",
+    "Version": "0.16.0"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "httpcore",
+    "URL": "https://www.encode.io/httpcore/",
+    "Version": "1.0.9"
+  },
+  {
+    "License": "BSD License",
+    "Name": "httpx",
+    "URL": "https://github.com/encode/httpx",
+    "Version": "0.28.1"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "idna",
+    "URL": "https://github.com/kjd/idna",
+    "Version": "3.20"
+  },
+  {
+    "License": "2-clause BSD License",
+    "Name": "ImageHash",
+    "URL": "https://github.com/JohannesBuchner/imagehash",
+    "Version": "4.3.2"
+  },
+  {
+    "License": "MIT",
+    "Name": "iniconfig",
+    "URL": "https://github.com/pytest-dev/iniconfig",
+    "Version": "2.3.1"
+  },
+  {
+    "License": "BSD-3-Clause",
+    "Name": "lxml",
+    "URL": "https://lxml.de/",
+    "Version": "6.1.3"
+  },
+  {
+    "License": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+    "Name": "numpy",
+    "URL": "https://numpy.org",
+    "Version": "2.5.5"
+  },
+  {
+    "License": "Apache-2.0 OR BSD-2-Clause",
+    "Name": "packaging",
+    "URL": "https://github.com/pypa/packaging",
+    "Version": "26.4"
+  },
+  {
+    "License": "MIT-CMU",
+    "Name": "pillow",
+    "URL": "https://python-pillow.org",
+    "Version": "13.0.0"
+  },
+  {
+    "Name": "pip",
+    "Version": "24.0",
+    "License": "MIT",
+    "URL": "Homepage, https://pip.pypa.io/"
+  },
+  {
+    "Name": "pip-licenses",
+    "Version": "5.5.5",
+    "License": "MIT",
+    "URL": "homepage, https://github.com/raimon49/pip-licenses"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "playwright",
+    "URL": "https://github.com/Microsoft/playwright-python",
+    "Version": "1.65.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "pluggy",
+    "URL": "https://github.com/pytest-dev/pluggy",
+    "Version": "1.7.0"
+  },
+  {
+    "Name": "prettytable",
+    "Version": "3.19.0",
+    "License": "BSD-3-Clause",
+    "URL": "Changelog, https://github.com/prettytable/prettytable/releases"
+  },
+  {
+    "License": "BSD-2-Clause",
+    "Name": "Pygments",
+    "URL": "https://pygments.org",
+    "Version": "2.21.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "pyproject_hooks",
+    "URL": "https://github.com/pypa/pyproject-hooks",
+    "Version": "1.3.3"
+  },
+  {
+    "License": "MIT",
+    "Name": "pytest",
+    "URL": "https://docs.pytest.org/en/latest/",
+    "Version": "9.2.0"
+  },
+  {
+    "License": "MIT AND BSD-3-Clause",
+    "Name": "PyWavelets",
+    "URL": "https://github.com/PyWavelets/pywt",
+    "Version": "1.10.0"
+  },
+  {
+    "License": "MIT License",
+    "Name": "PyYAML",
+    "URL": "https://pyyaml.org/",
+    "Version": "6.0.4"
+  },
+  {
+    "License": "MIT",
+    "Name": "ruff",
+    "URL": "https://docs.astral.sh/ruff",
+    "Version": "0.17.6"
+  },
+  {
+    "License": "BSD License",
+    "Name": "scipy",
+    "URL": "https://scipy.org/",
+    "Version": "1.18.1"
+  },
+  {
+    "Name": "setuptools",
+    "Version": "83.0.0",
+    "License": "MIT",
+    "URL": "Source, https://github.com/pypa/setuptools"
+  },
+  {
+    "License": "MIT",
+    "Name": "soupsieve",
+    "URL": "https://github.com/facelessuser/soupsieve",
+    "Version": "4.1.3"
+  },
+  {
+    "License": "PSF-2.0",
+    "Name": "typing_extensions",
+    "URL": "https://github.com/python/typing_extensions",
+    "Version": "4.16.0"
+  },
+  {
+    "Name": "wcwidth",
+    "Version": "0.9.5",
+    "License": "License :: OSI Approved :: MIT License",
+    "URL": "Homepage, https://github.com/jquast/wcwidth"
+  },
+  {
+    "Name": "wheel",
+    "Version": "0.48.0",
+    "License": "MIT",
+    "URL": "Changelog, https://wheel.readthedocs.io/en/stable/news.html"
+  }
+]

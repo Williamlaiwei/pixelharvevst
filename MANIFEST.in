@@ -1,0 +1,9 @@
+include README.md SECURITY.md CONTRIBUTING.md LICENSE-MIT.proposed pyproject.toml config.example.yaml
+include requirements.lock requirements-dev.lock
+recursive-include src/pixelharvest *.py
+recursive-include tests *.py
+recursive-include examples *.py
+recursive-include benchmarks *.py *.json
+recursive-include scripts *.py
+recursive-include docs *.md *.json *.txt
+global-exclude *.pyc *.part *.sqlite3 *.db

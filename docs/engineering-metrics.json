@@ -1,0 +1,44 @@
+{
+  "method": "Conservative textual reuse: AST-unparse selected predecessor bodies and new production modules, remove comments/docstrings/imports, trim line indentation; count SequenceMatcher contiguous equal blocks of at least three lines once per mapped new module. Matching concepts or rewritten logic receive no reuse credit.",
+  "production_python_files": 14,
+  "production_python_physical_lines": 1625,
+  "production_python_nonblank_lines": 1474,
+  "test_python_files": 8,
+  "test_python_physical_lines": 716,
+  "production_normalized_body_lines": 1032,
+  "conservatively_reused_normalized_lines": 183,
+  "production_reuse_percent": 17.73,
+  "selected_predecessor_normalized_lines": 190,
+  "selected_body_retained_percent": 96.32,
+  "module_details": [
+    {
+      "module": "image_qc.py",
+      "selected_predecessor_normalized_lines": 101,
+      "matching_normalized_lines": 97
+    },
+    {
+      "module": "downloader.py",
+      "selected_predecessor_normalized_lines": 71,
+      "matching_normalized_lines": 68
+    },
+    {
+      "module": "dedup.py",
+      "selected_predecessor_normalized_lines": 18,
+      "matching_normalized_lines": 18
+    }
+  ],
+  "source_readonly_check": {
+    "baseline_files": 80,
+    "changed_files": 0,
+    "scope": "Predecessor source, tests, configuration, documentation, scripts and private environment-file hashes captured at extraction start; operational datasets were not copied."
+  },
+  "local_validation": {
+    "os": "Windows",
+    "python": "3.12.2",
+    "chromium_tests_enabled": true,
+    "tests": 55,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

@@ -1,0 +1,59 @@
+# Replace example.org with domains you are authorized to access.
+workspace: .pixelharvest
+urls:
+- https://example.org/gallery
+allowed_domains:
+- example.org
+image_domains:
+- example.org
+selectors:
+- img
+batch_size: 100
+page:
+  renderer: http
+  render_mode: document
+  headless: true
+  browser_channel: null
+  render_wait_ms: 1000
+  max_html_bytes: 5000000
+http:
+  user_agent: PixelHarvest/0.1
+  request_interval_seconds: 3.0
+  timeout_seconds: 20.0
+  max_redirects: 3
+  max_attempts: 2
+  backoff_seconds: 2.0
+  default_retry_after_seconds: 60.0
+  respect_robots: true
+  max_file_bytes: 52428800
+  proxy_env: null
+page_auth:
+  cookie_file: null
+  headers_env: {}
+  headers: {}
+  allowed_domains: []
+image_auth:
+  cookie_file: null
+  headers_env: {}
+  headers: {}
+  allowed_domains: []
+quality:
+  min_width: 1024
+  min_height: 1024
+  min_short_side: 0
+  max_pixels: 40000000
+  allowed_formats:
+  - JPEG
+  - PNG
+  - WEBP
+  - AVIF
+  max_aspect_ratio: 3.5
+  reject_extreme_aspect: false
+  upscale_hf_ratio_threshold: 0.005
+  blur_laplacian_threshold: 20.0
+  white_page_fraction: 0.85
+  heuristics: true
+dedup:
+  phash_threshold: 8
+  aspect_tolerance: 0.02
+  keep: best
