@@ -1,4 +1,4 @@
-include README.md SECURITY.md CONTRIBUTING.md LICENSE-MIT.proposed pyproject.toml config.example.yaml
+include README.md SECURITY.md CONTRIBUTING.md LICENSE pyproject.toml config.example.yaml
 include requirements.lock requirements-dev.lock
 recursive-include src/pixelharvest *.py
 recursive-include tests *.py

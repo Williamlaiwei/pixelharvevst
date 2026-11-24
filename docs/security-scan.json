@@ -1,7 +1,7 @@
 {
   "scanner": "PixelHarvest publication scanner v1",
   "scope": "git index content",
-  "files_scanned": 50,
+  "files_scanned": 51,
   "findings": [],
   "limitations": "Rules cover private keys, common provider tokens, URL credentials, literal credentials, personal paths, hardcoded IPs and excluded artifacts. They do not establish ownership or detect all possible secrets; manual review is required."
 }

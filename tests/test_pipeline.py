@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import httpx
 import pytest
@@ -29,7 +30,9 @@ def test_exact_dedup_cache_and_provenance(config, picture):
     assert report["counts"] == {"done": 3} and report["unique_files"] == 1
     metadata = open(report["metadata_file"], encoding="utf-8").read()
     assert "signature=" not in metadata and "token=" not in metadata
-    assert json.loads(metadata.splitlines()[0])["sources"][0]["title"] == "Fixture"
+    record = json.loads(metadata.splitlines()[0])
+    assert record["sources"][0]["title"] == "Fixture"
+    assert record["status"] == "done" and record["transfer_status"] == "downloaded"
     assert len(seen) == 2
     p.close()
     p = Pipeline(config, "second", page_transport=page, image_transport=image)
@@ -178,3 +181,25 @@ def test_process_recovery_removes_stale_part(config, picture):
     assert p.execute()["counts"] == {"done": 1} and not stale.exists()
     p.close()
     image.close()
+
+
+def test_metadata_preserves_quality_rejection_after_successful_transfer(config, tmp_path):
+    from conftest import encoded_image
+
+    body = encoded_image(500, 400)
+    image = transport(
+        config, lambda req: httpx.Response(200, headers={"content-type": "image/jpeg"}, content=body), "image"
+    )
+    p = Pipeline(config, "quality-rejection", image_transport=image)
+    p.create("image", ["https://cdn.example.test/blank"])
+    try:
+        summary = p.execute()
+        record = json.loads(Path(summary["metadata_file"]).read_text(encoding="utf-8"))
+        assert summary["counts"] == {"rejected": 1}
+        assert record["status"] == "rejected"
+        assert record["transfer_status"] == "downloaded"
+        assert record["quality"]["status"] == "rejected"
+        assert "file_path" not in record
+    finally:
+        p.close()
+        image.close()

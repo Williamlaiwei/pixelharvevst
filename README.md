@@ -4,7 +4,7 @@ A configurable Python toolkit for web image acquisition, streaming validation, q
 
 PixelHarvest is a **single-worker toolkit** extracted from a working downloader. Configure authorized domains, discover image URLs, reject undersized images while receiving their bodies, validate complete files, and resume interrupted batches. No website-specific adapters, API integrations, account data, or image collections are included.
 
-> Publication staging: the owner must confirm the right to release the extracted code and approve a license. `LICENSE-MIT.proposed` is a proposal, not an effective license grant. See [release review](docs/RELEASE_REVIEW.md).
+Licensed under [MIT](LICENSE). For a detailed walkthrough of the implementation, configuration, metadata, recovery and extension points, read the [Technical and Operations Guide](docs/TECHNICAL_GUIDE.md).
 
 ## Key features
 
@@ -260,6 +260,8 @@ The publication scanner examines tracked files for common secret patterns, crede
 
 Potential follow-up work: explicit cache expiry/revalidation, structured adapter contracts for additional authorized sources, streamed discovery/download manifest exchange, more bounded gallery policies, and indexed perceptual candidate search. None is claimed as implemented distributed infrastructure.
 
-## License and release status
+## License and source repository
 
-The GitHub remote is supplied by the owner; the Python/project name remains PixelHarvest. Only a local initial commit is prepared until the owner confirms publication rights and the proposed MIT license. See [the release review and exact file manifest](docs/RELEASE_REVIEW.md). No package release or public push has been performed during staging.
+PixelHarvest is licensed under the [MIT License](LICENSE). Dependencies and separately installed browsers retain their own licenses. The owner approved publication of the extracted code and adoption of MIT on November 24, 2026; the [release review](docs/RELEASE_REVIEW.md) records the scope and checks.
+
+Source repository: [Williamlaiwei/pixelharvevst](https://github.com/Williamlaiwei/pixelharvevst). The repository spelling follows the supplied remote; the Python package and command are `pixelharvest`. No PyPI package release is included in this source publication.

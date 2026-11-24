@@ -1,10 +1,10 @@
 {
   "method": "Conservative textual reuse: AST-unparse selected predecessor bodies and new production modules, remove comments/docstrings/imports, trim line indentation; count SequenceMatcher contiguous equal blocks of at least three lines once per mapped new module. Matching concepts or rewritten logic receive no reuse credit.",
   "production_python_files": 14,
-  "production_python_physical_lines": 1625,
-  "production_python_nonblank_lines": 1474,
+  "production_python_physical_lines": 1626,
+  "production_python_nonblank_lines": 1475,
   "test_python_files": 8,
-  "test_python_physical_lines": 716,
+  "test_python_physical_lines": 741,
   "production_normalized_body_lines": 1032,
   "conservatively_reused_normalized_lines": 183,
   "production_reuse_percent": 17.73,
@@ -36,7 +36,7 @@
     "os": "Windows",
     "python": "3.12.2",
     "chromium_tests_enabled": true,
-    "tests": 55,
+    "tests": 56,
     "failures": 0,
     "errors": 0,
     "skipped": 0

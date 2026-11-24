@@ -28,6 +28,6 @@ Perceptual clustering was not moved into the hot download path: it remains an in
 
 ## Public source provenance and rights
 
-Only generic code selected from the owner-supplied predecessor is included, with synthetic replacement fixtures. No external implementation source was downloaded or vendored. The local origin alone does not establish copyright ownership. Before publication the owner must confirm employee/client/contractor rights, coauthor permission, any upstream obligations and approval of the proposed license. Dependency metadata is separately recorded; it does not resolve ownership of extracted code.
+Only generic code selected from the owner-supplied predecessor is included, with synthetic replacement fixtures. No external implementation source was downloaded or vendored. The local origin alone does not establish copyright ownership. The owner confirmed publication and adoption of MIT on November 24, 2026 in response to the presented rights/license review. The release review records that authorization; upstream notices and separately distributed dependencies remain governed by their own terms. Dependency metadata is separately recorded; it does not resolve ownership of extracted code.
 
 Exact conservative reuse counts and source read-only verification are in `engineering-metrics.json`. The local baseline contains original relative names and hashes only and is excluded from Git; no original file paths or source-specific naming are needed in the public metrics.

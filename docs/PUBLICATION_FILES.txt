@@ -3,7 +3,7 @@
 .github/workflows/ci.yml
 .gitignore
 CONTRIBUTING.md
-LICENSE-MIT.proposed
+LICENSE
 MANIFEST.in
 README.md
 SECURITY.md
@@ -15,6 +15,7 @@ docs/DEPENDENCIES.md
 docs/EXTRACTION.md
 docs/PUBLICATION_FILES.txt
 docs/RELEASE_REVIEW.md
+docs/TECHNICAL_GUIDE.md
 docs/dependency-licenses.json
 docs/engineering-metrics.json
 docs/security-scan.json

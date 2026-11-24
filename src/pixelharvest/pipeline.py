@@ -283,9 +283,10 @@ class Pipeline:
                 records.append(
                     {
                         "image_url": public_url(row["url"]),
-                        "status": row["status"],
                         "sources": source,
                         **result,
+                        "transfer_status": result.get("status"),
+                        "status": row["status"],
                     }
                 )
         output = self.state.root / "runs" / self.run_id
